@@ -20,6 +20,9 @@ from Teacher import views
 
 urlpatterns = [
     path('', views.home, name="home"),
-    path('login/', views.login, name="login"),
+    path('login_teacher/', views.login_teacher, name="login_teacher"),
     path('register/', views.register, name="register"),
+    path('instructions/', views.instructions, name="instructions"),
+    path('otp/', views.otp, name="otp"),
+
 ]
