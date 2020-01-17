@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 # from django.contrib.auth.models import User
+from django.template import RequestContext
+
 from .models import User
 from django.core.mail import send_mass_mail, send_mail
 
@@ -13,6 +15,7 @@ def home(request):
 
 
 def register(request):
+    logout(request)
     if request.method == 'POST':
         print('11')
 
@@ -23,12 +26,15 @@ def register(request):
         phone_no = request.POST.get('phone_no')
         password = request.POST.get('password')
 
-        # request['email'] = email
-
         if not User.objects.filter(username=email).exists():
-            user_obj = User.objects.create_user(username=email, password=password, email=email,first_name=first_name,last_name=last_name,phone_no=phone_no)
+            user_obj = User.objects.create_user(username=email, password=password, email=email, first_name=first_name,
+                                                last_name=last_name, phone_no=phone_no)
             user_obj.save()
+        else:
+            return redirect('/teacher/login_teacher/')
             # send_email();
+
+        request.session['email'] = email
         return redirect('/teacher/otp')
     else:
         return render(request, 'teacher/register.html')
@@ -36,13 +42,18 @@ def register(request):
 
 def login_teacher(request):
     if request.method == 'POST':
-        username = request.POST.get('email')
+        email = request.POST.get('email')
         password = request.POST.get('password')
-        print(username)
+        print(email)
         print(password)
-        user = authenticate(username=username, password=password)
-        user_obj = User.objects.get(username=username)
-        print("i am in login")
+
+        if not User.objects.filter(username=email):
+            return redirect("/teacher/login_teacher")
+
+        user = authenticate(username=email, password=password)
+        user_obj = User.objects.get(username=email)
+
+        request.session['email'] = email
 
         if user is None:
             return redirect('/teacher/login_teacher')
@@ -53,8 +64,7 @@ def login_teacher(request):
             return redirect('/teacher/instructions')
         else:
             return redirect('/teacher/otp')
-
-    logout(request)
+    # logout(request)
     return render(request, 'teacher/login.html')
 
 
@@ -66,19 +76,38 @@ def instructions(request):
 
 def otp(request):
     if request.method == 'POST':
-        username = request.POST.get('username')
-        otp = request.POST.get('otp');
-        print(68)
+        email = request.POST.get('email')
+        otp = request.POST.get('otp')
+        print(email)
+        print(email)
+        print(email)
+        print(email)
+        print(email)
+        print(email)
+        print(email)
+        print(email)
+        print(email)
+        print(otp)
+
+        if not User.objects.filter(username=email):
+            return redirect("/teacher/register/")
+
         if otp == '1234':
             print(70)
-            user_obj = User.objects.get(username=username)
+            user_obj = User.objects.get(username=email)
             user_obj.is_staff = 1
             user_obj.save()
-
-            return render(request, 'teacher/login.html')
+            login(request, user_obj)
+            return redirect('/teacher/instructions/')
 
         else:
             return render(request, 'teacher/otp.html')
+
+    if request.session.get('email', 'no_email') != 'no_email':
+        email = request.session['email']
+    else:
+        return redirect('/teacher/login_teacher/')
+
     return render(request, 'teacher/otp.html')
 
 

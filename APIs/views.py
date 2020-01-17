@@ -9,6 +9,7 @@ from .models import Registration_form
 from rest_framework.renderers import JSONRenderer
 from Teacher.models import User
 
+
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def user_register(request):
@@ -24,7 +25,8 @@ def user_register(request):
         token = 'empty'
         return Response({'error': error, 'message': message, 'token': token})
 
-    user = User.objects.create_user(username=email, email=email,first_name=first_name,last_name=last_name,phone_no=phone_no,password=password)
+    user = User.objects.create_user(username=email, email=email, first_name=first_name, last_name=last_name,
+                                    phone_no=phone_no, password=password)
     # user.set_password(password)
     # user.first_name = first_name
     # user.last_name = last_name
@@ -147,13 +149,10 @@ def save_form(request):
         # signature_image = request.POST.get('#signature_image')
 
         if Registration_form.objects.filter(user=user):
-            error = 'true'
-            message = 'Form is already present'
-            token = 'empty'
-            data = {'error': error, 'message': message, 'token': token}
-            return Response(data)
-
-        form_obj = Registration_form()
+            form_obj = Registration_form.objects.get(user=user)
+            flag = 1
+        else:
+            form_obj = Registration_form()
 
         if user:
             form_obj.user = user
@@ -217,7 +216,10 @@ def save_form(request):
         form_obj.save()
         data = registration_model_serializer(form_obj)
         error = 'false'
-        message = 'Form is saved'
+        if flag:
+            message = 'Form is updated'
+        else:
+            message = 'Form is saved'
         token = 'empty'
         data = {'error': error, 'message': message, 'token': token, 'form_data': data.data}
         return Response(data)
