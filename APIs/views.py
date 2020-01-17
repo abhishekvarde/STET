@@ -5,9 +5,9 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from .serializers import User_model, user_model_serializer, registration_model_serializer
 from .models import Registration_form
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
 from rest_framework.renderers import JSONRenderer
-
+from Teacher.models import User
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
@@ -16,17 +16,18 @@ def user_register(request):
     last_name = request.POST.get('last_name')
     email = request.POST.get('email')
     password = request.POST.get('password')
+    phone_no = request.POST.get('phone_no')
 
-    if User.objects.filter(username=email):
+    if User.objects.filter(username=email) or User.objects.filter(phone_no=phone_no):
         error = 'true'
         message = 'Entered username is already present'
         token = 'empty'
         return Response({'error': error, 'message': message, 'token': token})
 
-    user = User.objects.create(username=email, email=email)
-    user.set_password(password)
-    user.first_name = first_name
-    user.last_name = last_name
+    user = User.objects.create_user(username=email, email=email,first_name=first_name,last_name=last_name,phone_no=phone_no,password=password)
+    # user.set_password(password)
+    # user.first_name = first_name
+    # user.last_name = last_name
     user.save()
     token = Token.objects.create(user=user)
     token = token.key
