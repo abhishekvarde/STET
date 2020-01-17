@@ -25,7 +25,7 @@
 	.card {
 
 		/*position: relative;*/
-		justify-content: center;
+		float: right;
 		margin-right: 7%;
 		margin-top: 7%;
 		border-radius: 60px;
@@ -61,14 +61,13 @@
 </head>
 
 <body>
-{#	<img src="{% static 'users_student/image/complaint.png' %}" width="700" height="500">#}
-<center>
+	
 	<div class="card" style="width: 40rem; height: 50rem;">
 		<div class="card-body">
 			<h2 class="card-title">Create your Account</h2>
 			<p class="card-text">It's quick and easy</p>
 			<hr>
-			<form id="form" class="form-vertical" action="/users_student/register/" method="post">
+			<form id="form" class="form-vertical" action="/teacher/register/" method="POST">
 				{% csrf_token %}
 				<div class="form-group">
 					<label class="control-label col-sm-8" >First Name:</label>
@@ -83,22 +82,9 @@
 					</div>
 				</div>
 				<div class="form-group">
-{#					<div class="form-group">#}
-{#						<label class="control-label" style="margin-left: 12px;" for="sel1">Select College (select one):</label>#}
-{#						<div class="col-sm-15">#}
-{#							<select class="form-control col-sm-10" name="college_name" style="margin-left: 12px; margin-bottom: 4px;" id="sel1">#}
-{#							<option>SKNCOE</option>#}
-{#							<option>SCOE</option>#}
-{#							<option>NBN</option>#}
-{#							<option>PICT</option>#}
-{#							</select>#}
-{#						</div>#}
-{#						<div class="form-group">#}
-{#							<label class="control-label col-sm-8" >College ID:</label>#}
-{#							<div class="col-sm-10">#}
-{#								<input required type="text" class="form-control" name="college_id" id="college_id" placeholder="College ID">#}
-{#							</div>#}
-{#						</div>#}
+					<div class="form-group">
+						
+						
 						<div class="form-group">
 							<label class="control-label col-sm-2" >Email:</label>
 							<div class="col-sm-10">
@@ -106,21 +92,16 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label class="control-label col-sm-8" >Phone no:</label>
+							<label class="control-label col-sm-2" >Contact No:</label>
 							<div class="col-sm-10">
-								<input required type="text" class="form-control" name="phone_no" id="phone_no" placeholder="Phone No +91-">
+								<input required type="text" class="form-control" name="phone_no" id="phone_no" placeholder="Enter Mobile Number">
 							</div>
 						</div>
+
 						<div class="form-group">
-							<label class="control-label col-sm-3" for="pwd">Password:</label>
+							<label class="control-label col-sm-2" for="pwd">Password:</label>
 							<div class="col-sm-10">
 								<input required type="password" class="form-control" name="password" id="pwd" placeholder="Enter password">
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="control-label col-sm-3" for="pwd">Re-Password:</label>
-							<div class="col-sm-10">
-								<input required type="password" class="form-control" name="re_password" id="re_pwd" placeholder="Enter re-password">
 							</div>
 						</div>
 						<div class="text-center">
@@ -128,7 +109,7 @@
 						</div>
 						<br>
 						<div class="text-center" style="color: #707070; ">
-							Already Registered?<b><a href="/login" >Login</a></b>
+							Already Registered?<b><a href="/users_student/login" >Login</a></b>
 						</div>
 					</div>
 				</div>
@@ -140,7 +121,6 @@
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 		</div>
 	</div>
-    </center>
 </body>
 
 </html>

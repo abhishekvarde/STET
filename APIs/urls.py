@@ -1,5 +1,5 @@
 from django.urls import path, include
-from APIs import views
+from . import views
 # from rest_framework import serializers
 
 urlpatterns = [

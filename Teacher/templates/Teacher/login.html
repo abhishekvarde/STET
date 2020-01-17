@@ -68,7 +68,7 @@
 			<h2 class="card-title">Login to your account</h2>
 			<p class="card-text">It's quick and easy</p>
 			<hr>
-			<form id="form" class="form-vertical" action="/users_student/login/" method="post">
+			<form id="form" class="form-vertical" action="/teacher/login_teacher/" method="post">
 				{% csrf_token %}
 				<div class="form-group">
 					<div class="form-group">
@@ -85,7 +85,7 @@
 							</div>
 						</div>
 						<div class="text-center">
-							<button id="submit" type="button" class="btn register">Login</button>
+							<button id="submit" type="submit" class="btn register">Login</button>
 						</div>
 						<br>
 						<br>
