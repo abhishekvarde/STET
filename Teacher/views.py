@@ -78,34 +78,21 @@ def otp(request):
     if request.method == 'POST':
         email = request.POST.get('email')
         otp = request.POST.get('otp')
-        print(email)
-        print(email)
-        print(email)
-        print(email)
-        print(email)
-        print(email)
-        print(email)
-        print(email)
-        print(email)
-        print(otp)
 
         if not User.objects.filter(username=email):
             return redirect("/teacher/register/")
 
         if otp == '1234':
             print(70)
-            user_obj = User.objects.get(username=email)
-            user_obj.is_staff = 1
-            user_obj.save()
-            login(request, user_obj)
+            user = User.objects.get(username=email)
+            user.is_staff = 1
+            user.save()
+            login(request, user)
             return redirect('/teacher/instructions/')
-
         else:
             return render(request, 'teacher/otp.html')
 
-    if request.session.get('email', 'no_email') != 'no_email':
-        email = request.session['email']
-    else:
+    if request.session.get('email', 'no_email') == 'no_email':
         return redirect('/teacher/login_teacher/')
 
     return render(request, 'teacher/otp.html')
