@@ -16,7 +16,7 @@ class Registration_form(models.Model):
     dob = models.CharField(max_length=20, default="00-00-0000")
     address_line_1 = models.TextField(max_length=100, default="")
     address_line_2 = models.TextField(max_length=100, default="")
-    district = models.CharField(max_length=30, default="")
+    city = models.CharField(max_length=30, default="")
     pin_code = models.CharField(max_length=20, default="")
     state = models.CharField(max_length=30, default="")
     email = models.CharField(max_length=30, default="")

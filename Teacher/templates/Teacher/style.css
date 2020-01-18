@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body {}
+
+.footer {
+	position: absolute;
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	color: #000;
+	left: 0;
+	bottom: 0;
+	background-color: #26272b;
+	color: #737373;
+	text-align: center;
+
+}
+
+.container.app {
+
+	margin-bottom: 5%;
+	margin-top: 10%;
+	 box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.application {
+
+	margin: 5%;
+	padding-top: 3%;
+	padding-bottom: 5%;
+}
+
+.container.header img {
+
+	position: relative;
+}
+
+
+

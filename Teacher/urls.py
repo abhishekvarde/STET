@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from django.conf import settings
+from django.conf.urls.static import static
 from . import views
 
 urlpatterns = [
@@ -24,5 +25,6 @@ urlpatterns = [
     path('register/', views.register, name="register"),
     path('instructions/', views.instructions, name="instructions"),
     path('otp/', views.otp, name="otp"),
+    path('form/', views.fill_or_edit, name="form"),
 
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

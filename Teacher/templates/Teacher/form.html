@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+{% load static %}
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+{#	<link rel="stylesheet" type="text/css" href="style.css">#}
+	<script type="text/javascript" src="{% static 'script.js' %}"></script>
+</head>
+
+<body>
+	<div class="container header">
+		<img src="{% static 'sikkim.png' %}" height="100" width="100">
+
+	</div>
+	<div class="container app">
+		
+		<form class="application" action="/teacher/form/" method="post">
+			{% csrf_token %}
+			<input type="text" readonly value="{{ request.user.email }}">
+			<div class="form-row" style="margin-top: 5%;">
+				<div class="form-group col-md-6">
+					<label for="inputfirst1">Applicant First Name</label>
+					<input type="text" name="first_name" value="{{ data.first_name.value }}" class="form-control" id="inputfirst1">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="inputlast2">Applicant Last Name</label>
+					<input type="text" name="last_name" value="{{ data.last_name.value }}" class="form-control" id="inputlast2">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputfirst1">Father's First Name</label>
+					<input type="text" name="father_first_name" value="{{ data.father_first_name.value }}" class="form-control" id="inputfirst1">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="inputlast2">Father's Last Name</label>
+					<input type="text" name="father_last_name" value="{{ data.father_last_name.value }}" class="form-control" id="inputlast2">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputfirst1">Mother's First Name</label>
+					<input type="text" name="mother_first_name" value="{{ data.mother_first_name.value }}" class="form-control" id="inputfirst1">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="inputlast2">Mother's Last Name</label>
+					<input type="text" name="mother_last_name" value="{{ data.mother_last_name.value }}" class="form-control" id="inputlast2">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputAddress">Address</label>
+				<input type="text" name="address_line_1" value="{{ data.address_line_1.value }}" class="form-control" id="inputAddress" placeholder="1234 Main St">
+			</div>
+			<div class="form-group">
+				<label for="inputAddress2">Address 2</label>
+				<input type="text" name="address_line_2" value="{{ data.address_line_2.value }}" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputCity">City</label>
+					<input type="text" name="city" value="{{ data.city.value }}" class="form-control" id="inputCity">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="inputState">State</label>
+					<select id="inputState" name="state" value="{{ data.state.value }}" class="form-control">
+						<option selected>Choose...</option>
+						<option>...</option>
+					</select>
+				</div>
+				<div class="form-group col-md-2">
+					<label for="inputZip">Zip</label>
+					<input type="text" name="pin_code" value="{{ data.pin_code.value }}" class="form-control" id="inputZip">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="inputEmail4">Email</label>
+					<input type="email" name="email" value="{{ data.email.value }}" class="form-control" id="inputEmail4">
+				</div>
+				<!-- <div class="form-group col-md-6">
+					<label for="inputPassword4">Password</label>
+					<input type="password" class="form-control" id="inputPassword4">
+				</div> -->
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-4">
+					<label for="phoneno">Mobile no.</label>
+					<input type="text" name="phone_no" value="{{ data.phone_no.value }}" class="form-control" id="phoneno">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-4">
+					<label for="inputlanguage">Select language Paper Option</label>
+					<select id="inputlanguage" name="paper_language" value="{{ data.paper_language.value }}" class="form-control">
+						<option selected>Choose...</option>
+						<option>...</option>
+					</select>
+				</div>
+			</div>
+			<fieldset class="form-group">
+				<div class="row">
+					<legend class="col-form-label col-sm-4 pt-0">Category Of Teacher for STET </legend>
+					<div class="col-sm-10" style="margin-left: 20px;">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="category_of_teacher" id="gridRadios1" value="option1">
+							<label class="form-check-label" for="gridRadios1">
+								Primary Teacher for Classes I to V
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="category_of_teacher" id="gridRadios2" value="option2">
+							<label class="form-check-label" for="gridRadios2">
+								GT Arts for classes VI to VIII
+							</label>
+						</div>
+						<div class="form-check disabled">
+							<input class="form-check-input" type="radio" name="category_of_teacher" id="gridRadios3" value="option3">
+							<label class="form-check-label" for="gridRadios3">
+								GT Science/Maths for classes VI to VIII
+							</label>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			<label for="inputlanguage">EDUCATIONAL QUALIFICATION (enter codes as per the stream/course ) 1=Science, 2=Arts, 3=Commerce, 4=Others ,5=BA, 6=B.Sc , 7=B.Com, 8=Not Applicable.</label>
+			<table class="table table-dark">
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">STREAM (code)</th>
+						<th scope="col">Name of BOARD/Univ/Institute.</th>
+						<th scope="col">Year of Passing</th>
+						<th scope="col">Maximum Marks</th>
+						<th scope="col">Marks obtained</th>
+						<th scope="col">Percentage (Rounding off NOT ALLOWED)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">CLASS X</th>
+						<td><input type="text" class="form-control" id="class_x_1"></td>
+						<td><input type="text" class="form-control" id="class_x_2"></td>
+						<td><input type="text" class="form-control" id="class_x_3"></td>
+						<td><input type="text" class="form-control" id="class_x_4"></td>
+						<td><input type="text" class="form-control" id="class_x_5"></td>
+						<td><input type="text" class="form-control" id="class_x_6"></td>
+					</tr>
+					<tr>
+						<th scope="row">CLASS XII</th>
+						<td><input type="text" class="form-control" id="Class_xii_1"></td>
+						<td><input type="text" class="form-control" id="Class_xii_2"></td>
+						<td><input type="text" class="form-control" id="Class_xii_3"></td>
+						<td><input type="text" class="form-control" id="Class_xii_4"></td>
+						<td><input type="text" class="form-control" id="Class_xii_5"></td>
+						<td><input type="text" class="form-control" id="Class_xii_6"></td>
+					</tr>
+					<tr>
+						<th scope="row">GRADUATION</th>
+						<td><input type="text" class="form-control" id="graduation_1"></td>
+						<td><input type="text" class="form-control" id="graduation_2"></td>
+						<td><input type="text" class="form-control" id="graduation_3"></td>
+						<td><input type="text" class="form-control" id="graduation_4"></td>
+						<td><input type="text" class="form-control" id="graduation_5"></td>
+						<td><input type="text" class="form-control" id="graduation_6"></td>
+					</tr>
+					<tr>
+						<th scope="row">D.El.Ed</th>
+						<td><input type="text" class="form-control" id="d_e1_ed_1"></td>
+						<td><input type="text" class="form-control" id="d_e1_ed_2"></td>
+						<td><input type="text" class="form-control" id="d_e1_ed_3"></td>
+						<td><input type="text" class="form-control" id="d_e1_ed_4"></td>
+						<td><input type="text" class="form-control" id="d_e1_ed_5"></td>
+						<td><input type="text" class="form-control" id="d_e1_ed_6"></td>
+					</tr>
+					<tr>
+						<th scope="row">B.Ed</th>
+						<td><input type="text" class="form-control" id="b_ed_1"></td>
+						<td><input type="text" class="form-control" id="b_ed_2"></td>
+						<td><input type="text" class="form-control" id="b_ed_3"></td>
+						<td><input type="text" class="form-control" id="b_ed_4"></td>
+						<td><input type="text" class="form-control" id="b_ed_5"></td>
+						<td><input type="text" class="form-control" id="b_ed_6"></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="form-group">
+				<label for="inputAddress">Category/Community code </label>
+				<input type="text" class="form-control col-lg-6" id="inputAddress" placeholder="1234 Main St">
+			</div>
+			<div class="row">
+				<legend class="col-form-label col-sm-4 pt-0">Are you orthopedically/Locomotor impaired? </legend>
+				<div class="col-sm-10" style="margin-left: 20px;">
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="orthopedically_or_locomotor_impaired" id="gridRadios1" value="option1">
+						<label class="form-check-label" for="gridRadios1">
+							Yes
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="orthopedically_or_locomotor_impaired" id="gridRadios2" value="option2">
+						<label class="form-check-label" for="gridRadios2">
+							No
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputAddress">If YES for the above then,degree of disability </label>
+				<input type="text" name="degree_of_disability" class="form-control col-lg-2" id="inputAddress" placeholder="1234 Main St">
+			</div>
+			<div class="row">
+				<legend class="col-form-label col-sm-4 pt-0">Have you appeared for STET earlier ? </legend>
+				<div class="col-sm-10" style="margin-left: 20px;">
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="already_appeared" id="gridRadios1" value="option1">
+						<label class="form-check-label" for="gridRadios1">
+							Yes
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="already_appeared" id="gridRadios2" value="option2">
+						<label class="form-check-label" for="gridRadios2">
+							No
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">I agree & undertake that...<br>
+
+(i) The information submitted above is true and correct to the best of my Knowledge.I understand that ,In case any Information proves to be false or incorrect or incomplete,my candidature will be cancelled .<br>
+
+
+(ii) I understand that qualifying STET does not confer any right to claim for the job of teacher whether regular or adhoc.
+It is one among the eligibility criteria for applying for teaching job.<br>
+
+iii) I didnot round-off the percentage on my Educational Qualification (as in S.No.10 in this form),and I entered as it is with decimals(2 digits). If I ignore this ,and round off then my candidature will be automatically rejected by the processing system,ONLY ELIGIBLE CANDIDATES WILL RECIEVE THE ADMIT CARD.<br>
+
+(iv) I completed my Teaching Degree/Diploma (B.Ed/D.El.Ed...) as a regular Student by attending classes in an NCTE approved Institution or through NCTE approved Distance mode.</label>
+  </div>
+			<button type="submit" class="btn btn-primary">Save</button>
+		</form>
+
+	</div>
+	<div class="footer">
+		My name is utkarsh
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</html>

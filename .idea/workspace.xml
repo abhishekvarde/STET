@@ -2,8 +2,194 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80ead11d-49fa-4c51-8d57-42f55dd6bff1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/APIs/migrations/0002_auto_20200118_1409.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/bin/pytesseract" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/.dylibs/libfreetype.6.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/.dylibs/libjpeg.9.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/.dylibs/liblcms2.2.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/.dylibs/liblzma.5.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/.dylibs/libopenjp2.2.3.1.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/.dylibs/libpng16.16.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/.dylibs/libtiff.5.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/.dylibs/libwebp.7.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/.dylibs/libwebpdemux.2.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/.dylibs/libwebpmux.3.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/.dylibs/libz.1.2.11.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/BdfFontFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/BlpImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/BmpImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/BufrStubImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ContainerIO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/CurImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/DcxImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/DdsImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/EpsImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ExifTags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/FitsStubImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/FliImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/FontFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/FpxImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/FtexImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/GbrImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/GdImageFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/GifImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/GimpGradientFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/GimpPaletteFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/GribStubImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/Hdf5StubImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/IcnsImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/IcoImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/Image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageChops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageCms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageColor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageDraw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageDraw2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageEnhance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageFilter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageFont.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageGrab.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageMath.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageMode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageMorph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageOps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImagePalette.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImagePath.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageQt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageSequence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageShow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageStat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageTk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageTransform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImageWin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/ImtImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/IptcImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/Jpeg2KImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/JpegImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/JpegPresets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/McIdasImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/MicImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/MpegImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/MpoImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/MspImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/PSDraw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/PaletteFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/PalmImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/PcdImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/PcfFontFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/PcxImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/PdfImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/PdfParser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/PixarImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/PngImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/PpmImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/PsdImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/PyAccess.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/SgiImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/SpiderImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/SunImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/TarIO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/TgaImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/TiffImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/TiffTags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/WalImageFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/WebPImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/WmfImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/XVThumbImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/XbmImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/XpmImagePlugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/_binary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/_imaging.cpython-38-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/_imagingcms.cpython-38-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/_imagingft.cpython-38-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/_imagingmath.cpython-38-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/_imagingmorph.cpython-38-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/_imagingtk.cpython-38-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/_tkinter_finder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/_webp.cpython-38-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/PIL/features.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/Pillow-7.0.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/Pillow-7.0.0.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/Pillow-7.0.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/Pillow-7.0.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/Pillow-7.0.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/Pillow-7.0.0.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/Pillow-7.0.0.dist-info/zip-safe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image-1.5.27.dist-info/DESCRIPTION.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image-1.5.27.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image-1.5.27.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image-1.5.27.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image-1.5.27.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image-1.5.27.dist-info/metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image-1.5.27.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image/fields.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image/misc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image/storage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image/templatetags/img.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image/video_field.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image/videothumbs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/image/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/pytesseract-0.3.1-py3.8.egg-info/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/pytesseract-0.3.1-py3.8.egg-info/SOURCES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/pytesseract-0.3.1-py3.8.egg-info/dependency_links.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/pytesseract-0.3.1-py3.8.egg-info/entry_points.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/pytesseract-0.3.1-py3.8.egg-info/installed-files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/pytesseract-0.3.1-py3.8.egg-info/requires.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/pytesseract-0.3.1-py3.8.egg-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/pytesseract/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/pytesseract/pytesseract.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract-0.1.3-py3.8.egg-info/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract-0.1.3-py3.8.egg-info/SOURCES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract-0.1.3-py3.8.egg-info/dependency_links.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract-0.1.3-py3.8.egg-info/installed-files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract-0.1.3-py3.8.egg-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/default_config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/example.param" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/halos/c10.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/halos/c25.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/halos/c5.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/halos/c50.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/io.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/nfw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/qhull2002.1.tar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/voro.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/vorovol/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/vorovol/allvars.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/vorovol/allvars.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/vorovol/io.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/vorovol/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/vorovol/proto.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/STETenv/lib/python3.8/site-packages/tesseract/vorovol/vozutil.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Teacher/templates/Teacher/final_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Teacher/templates/Teacher/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Teacher/templates/Teacher/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/sikkim.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Teacher/templates/Teacher/otp.html" beforeDir="false" afterPath="$PROJECT_DIR$/Teacher/templates/Teacher/otp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIs/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/APIs/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/APIs/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/STET/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/STET/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/STET/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/STET/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Teacher/templates/Teacher/instructions.html" beforeDir="false" afterPath="$PROJECT_DIR$/Teacher/templates/Teacher/instructions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Teacher/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Teacher/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Teacher/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Teacher/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
@@ -38,7 +224,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Teacher/templates/Teacher" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -100,7 +286,8 @@
       <workItem from="1578924946316" duration="3590000" />
       <workItem from="1579031053286" duration="1711000" />
       <workItem from="1579185525070" duration="16605000" />
-      <workItem from="1579284126745" duration="8605000" />
+      <workItem from="1579284126745" duration="12775000" />
+      <workItem from="1579352972632" duration="5287000" />
     </task>
     <servers />
   </component>
@@ -112,14 +299,18 @@
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state x="320" y="91" key="#Inspections/0.23.1440.811@0.23.1440.811" timestamp="1578926069728" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579341026314">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1579341026314" />
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser" timestamp="1579195343847">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="173" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1579195343847" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1579185745868">
+    <state x="221" y="89" key="SettingsEditor" timestamp="1579340957568">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1579185745868" />
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1579340957568" />
     <state x="397" y="259" key="com.intellij.ide.util.TipDialog" timestamp="1578723411401">
       <screen x="0" y="23" width="1440" height="808" />
     </state>

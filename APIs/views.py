@@ -132,7 +132,7 @@ def save_form(request):
         dob = request.POST.get('dob')
         address_line_1 = request.POST.get('address_line_1')
         address_line_2 = request.POST.get('address_line_2')
-        district = request.POST.get('district')
+        city = request.POST.get('city')
         state = request.POST.get('state')
         pin_code = request.POST.get('pin_code')
         email = request.POST.get('email')
@@ -176,8 +176,8 @@ def save_form(request):
             form_obj.address_line_1 = address_line_1
         if address_line_2:
             form_obj.address_line_2 = address_line_2
-        if district:
-            form_obj.district = district
+        if city:
+            form_obj.city = city
         if pin_code:
             form_obj.pin_code = pin_code
         if state:
@@ -242,7 +242,7 @@ def submit_form(request):
 # @api_view(['POST'])
 # @permission_classes([AllowAny])
 # def fun(requset):
-#     yeh_lo = 'user=models.OneToOneField(User,on_delete=models.CASCADE),,respect=models.CharField(max_length=20,default=""),,first_name=models.CharField(max_length=30,default=""),,last_name=models.CharField(max_length=30,default=""),,father_first_name=models.CharField(max_length=30,default=""),,father_last_name=models.CharField(max_length=30,default=""),,mother_first_name=models.CharField(max_length=30,default=""),,mother_last_name=models.CharField(max_length=30,default=""),,dob=models.CharField(max_length=20,default="00-00-0000"),,address_line_1=models.TextField(max_length=100,default=""),,address_line_2=models.TextField(max_length=100,default=""),,district=models.CharField(max_length=30,default=""),,state=models.CharField(max_length=30,default=""),,email=models.CharField(max_length=30,default=""),,phone_no=models.CharField(max_length=10,default=""),,paper_language=models.CharField(max_length=30,default=""),,category_of_teacher=models.CharField(max_length=100,default=""),,#user_image=models.ImageField(upload_to="form_images/"),,orthopedically_or_locomotor_impaired=models.BooleanField(default=False),,degree_of_disability=models.IntegerField(default=0),,already_appeared=models.BooleanField(default=False),,receipt=models.CharField(max_length=100,default=""),,amount=models.FloatField(default=0),,name_of_bank=models.CharField(max_length=100,default=""),,#signature_image=models.ImageField(upload_to="form_images/"),,'
+#     yeh_lo = 'user=models.OneToOneField(User,on_delete=models.CASCADE),,respect=models.CharField(max_length=20,default=""),,first_name=models.CharField(max_length=30,default=""),,last_name=models.CharField(max_length=30,default=""),,father_first_name=models.CharField(max_length=30,default=""),,father_last_name=models.CharField(max_length=30,default=""),,mother_first_name=models.CharField(max_length=30,default=""),,mother_last_name=models.CharField(max_length=30,default=""),,dob=models.CharField(max_length=20,default="00-00-0000"),,address_line_1=models.TextField(max_length=100,default=""),,address_line_2=models.TextField(max_length=100,default=""),,city=models.CharField(max_length=30,default=""),,state=models.CharField(max_length=30,default=""),,email=models.CharField(max_length=30,default=""),,phone_no=models.CharField(max_length=10,default=""),,paper_language=models.CharField(max_length=30,default=""),,category_of_teacher=models.CharField(max_length=100,default=""),,#user_image=models.ImageField(upload_to="form_images/"),,orthopedically_or_locomotor_impaired=models.BooleanField(default=False),,degree_of_disability=models.IntegerField(default=0),,already_appeared=models.BooleanField(default=False),,receipt=models.CharField(max_length=100,default=""),,amount=models.FloatField(default=0),,name_of_bank=models.CharField(max_length=100,default=""),,#signature_image=models.ImageField(upload_to="form_images/"),,'
 #     yeh_lo = yeh_lo.split(",,")
 #     for i in range(len(yeh_lo)):
 #         voh_lo = yeh_lo[i].split("=")
