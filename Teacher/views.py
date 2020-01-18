@@ -11,8 +11,8 @@ from .models import User
 from django.core.mail import send_mass_mail, send_mail
 
 
-def img(request):
-    print(image_to_string())
+# def img(request):
+#     print(image_to_string())
 
 
 def home(request):
