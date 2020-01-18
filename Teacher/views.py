@@ -68,10 +68,12 @@ def otp(request):
     if request.method == 'POST':
         username = request.POST.get('username')
         otp = request.POST.get('otp');
+        user_obj = User.objects.get(username=username)
         print(68)
-        if otp == '1234':
+        print(User.validateotp(user_obj))
+        if otp == '1234' and User.validateotp(user_obj):
             print(70)
-            user_obj = User.objects.get(username=username)
+
             user_obj.is_staff = 1
             user_obj.save()
 
